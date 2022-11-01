@@ -1,4 +1,4 @@
-params(
+param(
   [Switch]$Fail,
   [Switch]$ExitCode,
   $Parameter1
