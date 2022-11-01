@@ -4,7 +4,7 @@ param(
   $Parameter1
 )
 
-if ($fail) {
+if ($Fail) {
     throw "This script fails!!"
 }
 
