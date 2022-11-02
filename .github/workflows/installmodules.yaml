@@ -10,6 +10,6 @@ jobs:
       - name: Script
         run: |
           Set-PSRepository PSGallery -InstallationPolicy Trusted
-          Install-Module Universall
+          Install-Module Universal
           Get-Module Universal -ListAvailable
         shell: pwsh
