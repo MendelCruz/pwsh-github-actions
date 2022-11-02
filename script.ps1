@@ -8,7 +8,7 @@ if ($Fail) {
     throw "This script fails!!"
 }
 
-if ($ExitCode = "1")  {
+if ($ExitCode)  {
     exit 5
 }
 
