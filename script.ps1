@@ -8,7 +8,7 @@ if ($Fail) {
     throw "This script fails!!"
 }
 
-if ($ExitCode = '1')  {
+if ($ExitCode = "1")  {
     # exit 5
     write-host "Finish with successfull"
 }
