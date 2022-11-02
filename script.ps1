@@ -8,8 +8,9 @@ if ($Fail) {
     throw "This script fails!!"
 }
 
-if ($ExitCode)  {
-    exit 5
+if ($ExitCode = '1')  {
+    # exit 5
+    write-host "Finish with successfull"
 }
 
 $Env:MyVariable
