@@ -1,4 +1,4 @@
-name: Install Modules Power Shell
+name: List Modules Power Shell
 on: [workflow_dispatch]
 
 jobs:
