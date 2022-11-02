@@ -9,8 +9,7 @@ if ($Fail) {
 }
 
 if ($ExitCode = "1")  {
-    # exit 5
-    write-host "Finish with successfull"
+    exit 5
 }
 
 $Env:MyVariable
