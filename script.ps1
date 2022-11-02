@@ -9,7 +9,7 @@ if ($Fail) {
 }
 
 if ($ExitCode)  {
-    exit 1
+    exit 5
 }
 
 $Env:MyVariable
