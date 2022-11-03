@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   build:
-    name: Run Script powershell
+    name: Update Master
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
