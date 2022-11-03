@@ -10,3 +10,30 @@ jobs:
       - name: Script
         run:  ./script.ps1
         shell:  pwsh
+  
+  deploy-dev:
+    name: Deploy DEV
+    runs-on: ubuntu-latest
+    environment:
+      name: DEV
+    needs: build
+    steps:
+      - uses: actions/checkout@v1
+      - name: Script
+        run:  ./script.ps1
+        shell:  pwsh
+
+  deploy-hmg:
+    name: Deploy HMG
+    runs-on: ubuntu-latest
+    environment:
+      name: HMG
+    needs: deploy-dev
+    steps:
+      - uses: actions/checkout@v1
+      - name: Script
+        run:  ./script.ps1
+        shell:  pwsh
+
+
+
